@@ -37,8 +37,8 @@ def GetFileList(dir):
     return list
 		
 def ReversePuctuation(file, newfile):
-    f = open(file, 'r')
-    nf = open(newfile, 'w')
+    f = open(file, 'r', encoding="utf-8")
+    nf = open(newfile, 'w', encoding="utf-8")
     
     #print("both files opened")
     for line in f:
@@ -50,7 +50,7 @@ def ReversePuctuation(file, newfile):
     nf.close()
 	
 def FixOneLine(s):
-    SpecialChars = '.,:;''()-?!+=*&$^%#@~`" /'
+    SpecialChars = '.,:;''-!+=*&$^%#@~`" /،'
     Prefix = ''
     Suffix = ''
     
