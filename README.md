@@ -3,11 +3,11 @@ This is a fork of Reverse Subtitles Punctuation from BuSHari with some tweaks to
 
 # Reverse Arabic Subtitles Punctuation
 
-This project is a small python script for reversing the punctuation of an Arabic SRT subtitle. It is based on the Subtitle Workshop 2.61 feature with the same capabilities.
+This project is a small python script for reversing the punctuation of an Arabic SRT subtitle. It is based on the Subtitle Workshop 2.61 feature with the same capabilities and Subtitle Edit.
 
 ## Motivation
 
-Subtitle Workshop has a reverse punctuation feature, but it's only works correctly in Windows-1256 (ANSI) and not in UTF-8. Becuase in UTF-8 we don't need to swap brackets, only other symbols.
+Subtitle Edit has a reverse punctuation feature, but it's only works correctly in Windows-1256 (ANSI) and not in UTF-8. Becuase in UTF-8 we don't need to swap brackets, only other symbols.
 
 ## Installation & Usage
 
