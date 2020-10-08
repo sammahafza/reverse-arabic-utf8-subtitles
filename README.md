@@ -1,4 +1,4 @@
-This is a fork of Reverse Subtitles Punctuation from BuSHari with some tweaks to work with Arabic subtitles in utf-8 form...
+This is a fork of Reverse Subtitles Punctuation from BuSHari (origanlly created by Asaf) with some tweaks to reverse Arabic subtitles without parentheses.
 
 
 # Reverse Arabic Subtitles Punctuation
@@ -7,9 +7,11 @@ This project is a small python script for reversing the punctuation of an Arabic
 
 ## Motivation
 
-Some streaming devices read arabic with RTL fine like my Playstation 4, but a lot of arabic subtitles are old-fashioned with reverse punctuation. they don't use RIGHT-TO-LEFT EMBEDDING Control Character (U+202B) so it only works on LTR devices.
+Some streaming devices read arabic with RTL fine like my Playstation 4, but a because a lot of arabic subtitles are old-fashioned with reverse punctuation. it doesn't work with PS4, so a reverse needed.
 
-Subtitle Edit has a reverse punctuation feature, but it's only works correctly in Windows-1256 (ANSI) and not in UTF-8. Becuase in UTF-8 we don't need to swap brackets, only other symbols.
+And, they don't use RIGHT-TO-LEFT EMBEDDING Control Character (U+202B) which solve the language problems in all device that support UTF-8.
+Sometimes the Arabic subtiltes have the parentheses in corect order but the other characters are reversed, so we need to reverse every special characters but the parentheses.
+Subtitle Edit has a reverse punctuation feature, but it reverse every special character, this script will not reverse the parentheses.
 
 ## Installation & Usage
 
